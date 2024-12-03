@@ -1,0 +1,93 @@
+/* main cv style */
+body{
+    display: inline block;
+    position: absolute;
+    background-color: rgb(197, 197, 197);
+    height: 100%;
+    width: 98%;
+    font-family: 'Tajawal', sans-serif;
+}
+#main_container{
+    display: flex;
+    position: relative;
+    top: 0%;
+    left: 21%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 750px;
+    height: 1060px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#left_subcontainer{
+    display: inline-block;
+    width: 33%;
+    background-color: gold;
+}
+#image_box{
+    width:160px;
+    height:160px;
+    border: 1px black solid;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+.left_data_box{
+    height: 20%;
+    padding:10%;
+}
+.left_label{
+    font-size: 28px;
+}
+.left_line{
+    border: 2px rgb(207, 149, 0) solid;
+}
+#right_subcontainer{
+    display: inline-block;
+    width: 67%;
+}
+#name_box{
+    height:15%;
+    width:95.8%;
+    padding: 10px;
+    font-size: 150%;
+}
+.right_data_box{
+    height:15%;
+    height: 39.45%;
+    width:95.8%;    
+    padding: 10px;
+}
+
+/*preview buttons*/
+.preview_btns{
+    border-radius: 5px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    cursor: pointer;
+}
+#return_btn{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#delete_btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#logout_btn{
+    position: relative;
+    bottom: 5%;
+    left: 5%;
+}
+#download_btn{
+    position: relative;
+    bottom: 5%;
+    left: 75%;
+}

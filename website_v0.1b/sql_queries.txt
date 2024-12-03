@@ -1,0 +1,2 @@
+//create new user
+INSERT INTO `user_info` (`id`, `username`, `email`, `password`) VALUES ('1', 'user123', 'user123@email.com', '12345678');
