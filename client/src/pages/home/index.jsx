@@ -1,8 +1,8 @@
 import Header from "./Header"
 import Hero from "./Hero"
 import Footer from "./Footer"
-import Cards from "./Cards"
 import { Infos } from "./Infos"
+import { Temoinages } from "./Temoinages"
 
 export const Home = () => {
   return (
@@ -21,7 +21,7 @@ export const Home = () => {
             modeles
           </section>
           <section className='sm:px-16 px-8 sm:py-24 py-12'>
-            temoinages
+            <Temoinages />
           </section>
           <section className=''>
             <Footer />
