@@ -1,62 +1,35 @@
-import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
-const keenSliderActive = document.getElementById('keen-slider-active')
-const keenSliderCount = document.getElementById('keen-slider-count')
+const switchToggle = document.querySelector('#switch-toggle');
+let isDarkmode = false
 
-const keenSlider = new KeenSlider(
-    '#keen-slider',
-    {
-    loop: true,
-    defaultAnimation: {
-        duration: 750,
-    },
-    slides: {
-        origin: 'center',
-        perView: 1,
-        spacing: 16,
-    },
-    breakpoints: {
-        '(min-width: 640px)': {
-        slides: {
-            origin: 'center',
-            perView: 1.5,
-            spacing: 16,
-        },
-        },
-        '(min-width: 768px)': {
-        slides: {
-            origin: 'center',
-            perView: 1.75,
-            spacing: 16,
-        },
-        },
-        '(min-width: 1024px)': {
-        slides: {
-            origin: 'center',
-            perView: 3,
-            spacing: 16,
-        },
-        },
-    },
-    created(slider) {
-        slider.slides[slider.track.details.rel].classList.remove('opacity-40')
+const darkIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>`
 
-        keenSliderActive.innerText = slider.track.details.rel + 1
-        keenSliderCount.innerText = slider.slides.length
-    },
-    slideChanged(slider) {
-        slider.slides.forEach((slide) => slide.classList.add('opacity-40'))
+const lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>`
 
-        slider.slides[slider.track.details.rel].classList.remove('opacity-40')
+function toggleTheme (){
+  isDarkmode = !isDarkmode
+  localStorage.setItem('isDarkmode', isDarkmode)
+  switchTheme()
+}
 
-        keenSliderActive.innerText = slider.track.details.rel + 1
-    },
-    },
-    []
-)
+function switchTheme (){
+  if (isDarkmode) {
+    switchToggle.classList.remove('bg-yellow-500','-translate-x-2')
+    switchToggle.classList.add('bg-gray-700','translate-x-full')
+    setTimeout(() => {
+      switchToggle.innerHTML = darkIcon
+    }, 250);
+  } else {
+    switchToggle.classList.add('bg-yellow-500','-translate-x-2')
+    switchToggle.classList.remove('bg-gray-700','translate-x-full')
+    setTimeout(() => {
+      switchToggle.innerHTML = lightIcon
+    }, 250);
+  }
+}
 
-const keenSliderPrevious = document.getElementById('keen-slider-previous')
-const keenSliderNext = document.getElementById('keen-slider-next')
-
-keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-keenSliderNext.addEventListener('click', () => keenSlider.next())
+switchTheme()

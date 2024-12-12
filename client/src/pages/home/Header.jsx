@@ -1,6 +1,6 @@
 import {SignUpButton, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
 import {HeaderLogo} from '../../assets/images'
-
+import DarkButton from './DarkButton'
 
 const Header = () => {
   return (
