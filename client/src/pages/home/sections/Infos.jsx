@@ -1,5 +1,5 @@
-import Cards from "./Cards"
-import {ChoixModele, RedigerCv, Telecharger} from '../../assets/images'
+import Cards from "../../components/Cards"
+import {ChoixModele, RedigerCv, Telecharger} from '../../../assets/images'
 
 export const Infos = () => {
   return (

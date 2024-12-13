@@ -1,10 +1,9 @@
-import Header from "./Header"
-import Hero from "./Hero"
-import Footer from "./Footer"
-import { Infos } from "./Infos"
-import { Temoinages } from "./Temoinages"
-import { Modeles } from "./Modeles"
-import Test from "../../assets/backup/Test"
+import Header from "../components/Header"
+import Hero from "./sections/Hero"
+import Footer from "../components/Footer"
+import { Infos } from "./sections/Infos"
+import { Temoinages } from "./sections/Temoinages"
+import { Modeles } from "./sections/Modeles"
 
 export const Home = () => {
   return (

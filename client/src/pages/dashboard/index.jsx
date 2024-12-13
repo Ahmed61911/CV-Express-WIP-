@@ -1,5 +1,11 @@
+import SidePanel from "../components/SidePanel"
+import Header from "../components/Header"
+
 export const Dashboard = () => {
   return (
-    <h1>Dashboard</h1>
+    <>
+      <Header />
+      <SidePanel />
+    </>
   )
 }

@@ -5,7 +5,7 @@ export const Temoinages = () => {
         <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
           <div className="md:flex md:items-end md:justify-between">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-gray-50">
+              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-gray-50 max-lg:text-xl">
                 Read trusted reviews from our customers
               </h2>
 
@@ -42,7 +42,7 @@ export const Temoinages = () => {
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
             <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 dark:bg-slate-500">
               <div>
-                <div className="flex gap-0.5 text-amber-500">
+                <div className="flex gap-0.5 text-amber-500 max-lg:justify-center">
                   <svg
                     className="size-5"
                     fill="currentColor"
@@ -100,10 +100,10 @@ export const Temoinages = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black">"Un service exceptionnel !"
+                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black max-lg:text-xl max-lg:text-center">"Un service exceptionnel !"
                   </p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700 default dark:text-gray-900">
+                  <p className="mt-4 leading-relaxed text-gray-700 default dark:text-gray-900 max-lg:text-sm max-lg:text-center">
                   "Ce service a dépassé mes attentes ! L'équipe a été professionnelle, efficace et a livré exactement ce dont j'avais besoin.
                    Je les recommande vivement à tous ceux qui recherchent qualité et fiabilité.
                   </p>
@@ -117,7 +117,7 @@ export const Temoinages = () => {
 
             <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 dark:bg-slate-500">
               <div>
-                <div className="flex gap-0.5 text-amber-500">
+                <div className="flex gap-0.5 text-amber-500 max-lg:justify-center">
                   <svg
                     className="size-5"
                     fill="currentColor"
@@ -175,9 +175,9 @@ export const Temoinages = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black">"Une collaboration parfaite !"</p>
+                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black max-lg:text-xl max-lg:text-center">"Une collaboration parfaite !"</p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-900">
+                  <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-900 max-lg:text-sm max-lg:text-center">
                   "Travailler avec cette entreprise a été un véritable plaisir. Leur souci du détail et leur engagement envers l'excellence sont incomparables. 
                   Je suis extrêmement satisfaite des résultats !"
                   </p>
@@ -191,7 +191,7 @@ export const Temoinages = () => {
 
             <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 dark:bg-slate-500">
               <div>
-                <div className="flex gap-0.5 text-amber-500">
+                <div className="flex gap-0.5 text-amber-500 max-lg:justify-center">
                   <svg
                     className="size-5"
                     fill="currentColor"
@@ -249,9 +249,9 @@ export const Temoinages = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black">"Des résultats impressionnants !"</p>
+                  <p className="text-2xl font-bold text-gray-800 sm:text-3xl dark:text-black max-lg:text-xl max-lg:text-center">"Des résultats impressionnants !"</p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-900">
+                  <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-900 max-lg:text-sm max-lg:text-center">
                   "Une expérience exceptionnelle du début à la fin ! 
                   L'équipe a dépassé mes attentes pour s'assurer que mon projet soit terminé à temps et selon mes exigences."
                   </p>

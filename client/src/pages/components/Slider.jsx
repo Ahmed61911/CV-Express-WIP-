@@ -17,7 +17,7 @@ import { EffectCards } from 'swiper/modules';
 
 const Slider = () => {
   return (
-    <div className='px-28'>
+    <div className='px-28 max-lg:p-0'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCards]}
         navigation
