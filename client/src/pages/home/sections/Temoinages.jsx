@@ -39,7 +39,7 @@ export const Temoinages = () => {
             </a>
           </div>
 
-          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 ">
             <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 dark:bg-slate-500">
               <div>
                 <div className="flex gap-0.5 text-amber-500 max-lg:justify-center">

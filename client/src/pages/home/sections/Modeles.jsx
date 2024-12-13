@@ -2,7 +2,7 @@ import Slider from '../../components/Slider'
 
 export const Modeles = () => {
       return (
-        <div className='flex flex-col p-24 dark:bg-gray-800 bg-indigo-300 lg:flex-row max-lg:p-4'>
+        <div className='flex flex-col p-24 dark:bg-gray-800 bg-blue-300 lg:flex-row max-lg:p-4'>
           <div class="relative overflow-hidden p-10 justify-center ">
             <div class="relative">
               <div class="max-w-[85rem] ">

@@ -48,3 +48,44 @@ body {
   font-weight: bold;
   color: #fff;
 }
+
+/* From Uiverse.io by kamehame-ha */ 
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+}
+
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 320px;
+  width: 240px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  background-color: #3b83f6bd;
+}
+
+.cards .card p.tip {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 1em;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}

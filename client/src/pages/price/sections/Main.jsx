@@ -1,12 +1,12 @@
 const Main = () => {
   return (
-    <section class="bg-gray-900 py-12">
+    <section class="bg-blue-200 dark:bg-gray-900 py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
+      <h2 class="text-4xl font-extrabold text-gray-950 dark:text-white sm:text-5xl">
         Pricing Plans
       </h2>
-      <p class="mt-4 text-xl text-gray-400">
+      <p class="mt-4 text-xl text-gray-800 dark:text-gray-400">
         Simple, transparent pricing for your business needs.
       </p>
     </div>
