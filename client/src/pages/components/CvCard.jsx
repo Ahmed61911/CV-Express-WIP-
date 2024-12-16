@@ -1,4 +1,4 @@
-
+import ButtonGroupCard from "./ButtonGroupCard"
 const CvCard = ({Type}) => {
     if (Type == 'add'){
         return(
@@ -7,13 +7,13 @@ const CvCard = ({Type}) => {
                     <div class="w-60 h-72 relative cursor-pointer dark:bg-gray-800 bg-slate-50 flex flex-col items-center justify-center text-center rounded-2xl">
                         <div class="w-28 h-28">
                             <button title="Add New" class="group cursor-pointer outline-none hover:rotate-90 duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-zinc-900 dark:stroke-zinc-200 fill-none group-hover:fill-zinc-300 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-gray-700 dark:stroke-zinc-200 fill-none group-hover:fill-zinc-300 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300">
                                 <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
                                 <path d="M8 12H16" stroke-width="1.5"></path>
                                 <path d="M12 16V8" stroke-width="1.5"></path>
                             </svg>
                             </button>
-                            <p className="text-xl font-semibold dark:text-zinc-200">Ajouter un CV</p>
+                            <p className="text-xl text-gray-700 font-semibold dark:text-zinc-200">Ajouter un CV</p>
                         </div>
                         
                     </div>  
@@ -29,7 +29,7 @@ const CvCard = ({Type}) => {
             <span class="text-2xl font-semibold dark:text-gray-200">George Johnson</span>
             <p className="dark:text-gray-200">Support Specialist</p>
         </div>
-        <a class="bg-blue-700 px-4 py-1  text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 hover:bg-blue-500" href="#">Folow</a>
+            <ButtonGroupCard />
         </div>            
     </>
   )
