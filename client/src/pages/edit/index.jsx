@@ -27,7 +27,7 @@ const Index = ({ initialWidth = 800, maxWidth = 1000 }) => {
   };
 
   return (
-    <div className="flex w-full h-screen">
+    <div className="flex w-full h-full">
       {/* Left Section */}
       <div
         className="min-h-full bg-blue-100"
@@ -38,9 +38,10 @@ const Index = ({ initialWidth = 800, maxWidth = 1000 }) => {
 
       {/* Resizable Slider */}
       <div
-        className="w-2 cursor-ew-resize bg-gray-400"
+        className="relative overflow w-2 border-l-2 border-r-2 border-slate-400 cursor-ew-resize min-h-max bg-gray-200 justify-center align-middle"
         onMouseDown={handleMouseDown}
-      ></div>
+      >
+      </div>
 
       {/* Right Section */}
       <div
