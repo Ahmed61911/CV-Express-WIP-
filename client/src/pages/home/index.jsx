@@ -8,7 +8,7 @@ import { Modeles } from "./sections/Modeles"
 export const Home = () => {
   return (
     <>
-        <main className='relative'>
+        <main className='relative '>
           <section className='w-full'>
             <Header />
           </section>

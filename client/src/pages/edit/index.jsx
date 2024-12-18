@@ -30,7 +30,7 @@ const Index = ({ initialWidth = 800, maxWidth = 1000 }) => {
     <div className="flex w-full h-full">
       {/* Left Section */}
       <div
-        className="min-h-full bg-blue-100"
+        className="min-h-full bg-blue-100 z-20"
         style={{ width: `${leftWidth}px` }}
       >
         <LeftEdit />
@@ -38,14 +38,14 @@ const Index = ({ initialWidth = 800, maxWidth = 1000 }) => {
 
       {/* Resizable Slider */}
       <div
-        className="relative overflow w-2 border-l-2 border-r-2 border-slate-400 cursor-ew-resize min-h-max bg-gray-200 justify-center align-middle"
+        className="relative overflow w-2 border-l-2 border-r-2 z-10 border-slate-400 cursor-ew-resize min-h-max bg-gray-200 justify-center align-middle"
         onMouseDown={handleMouseDown}
       >
       </div>
 
       {/* Right Section */}
       <div
-        className="flex-1 min-h-full max-h-screen bg-slate-200"
+        className="flex-1  min-h-max bg-red-200"
         style={{ width: `calc(100% - ${leftWidth}px - 2px)` }} // Adjust dynamically
       >
         <RightEdit />
